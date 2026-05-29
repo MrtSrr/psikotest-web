@@ -1,9 +1,13 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { Apple, Smartphone, Download } from 'lucide-react';
+import Link from 'next/link';
+import { Apple, Smartphone, ArrowRight } from 'lucide-react';
+import { APP_STORE_URL, PLAY_STORE_URL } from '@/lib/config';
 
 export function DownloadCTA() {
+  const storeYayinda = Boolean(APP_STORE_URL || PLAY_STORE_URL);
+
   return (
     <section id="indir" className="py-20 lg:py-32">
       <div className="container-max">
@@ -20,43 +24,47 @@ export function DownloadCTA() {
 
           <div className="relative text-center max-w-3xl mx-auto text-white">
             <h2 className="text-3xl lg:text-5xl font-extrabold tracking-tight">
-              Hemen indir, ilk randevunu al
+              {storeYayinda ? 'Hemen indir, ilk randevunu al' : 'Beta\'ya katıl, ilk sen dene'}
             </h2>
             <p className="mt-5 text-lg lg:text-xl text-white/85 leading-relaxed">
-              iOS ve Android — Türkiye&apos;nin lisanslı uzman ağına 3 tıkla bağlan.
+              {storeYayinda
+                ? 'iOS ve Android — Türkiye\'nin lisanslı uzman ağına 3 tıkla bağlan.'
+                : 'Psiva kapalı beta\'da. E-postanı bırak, lansmanda ilk haber alan ve erken erişen sen ol.'}
             </p>
 
-            <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
-              {/* Store link'leri public lansman ile aktif olacak — şimdi sayfayı bozmasın */}
-              <button
-                disabled
-                title="Yakında yayında"
-                aria-label="App Store — yakında yayında"
-                className="inline-flex items-center gap-3 px-7 py-4 rounded-2xl bg-black/80 text-white shadow-strong opacity-70 cursor-not-allowed"
-              >
-                <Apple size={28} strokeWidth={1.6} aria-hidden="true" />
-                <div className="text-left">
-                  <div className="text-xs opacity-75">Yakında</div>
-                  <div className="text-base font-bold leading-tight">App Store</div>
-                </div>
-              </button>
-              <button
-                disabled
-                title="Yakında yayında"
-                aria-label="Google Play — yakında yayında"
-                className="inline-flex items-center gap-3 px-7 py-4 rounded-2xl bg-black/80 text-white shadow-strong opacity-70 cursor-not-allowed"
-              >
-                <Smartphone size={28} strokeWidth={1.6} aria-hidden="true" />
-                <div className="text-left">
-                  <div className="text-xs opacity-75">Yakında</div>
-                  <div className="text-base font-bold leading-tight">Google Play</div>
-                </div>
-              </button>
-            </div>
+            {storeYayinda ? (
+              // Store linkleri tanımlıysa gerçek indirme butonları
+              <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
+                {APP_STORE_URL && (
+                  <a href={APP_STORE_URL} target="_blank" rel="noopener noreferrer"
+                     className="inline-flex items-center gap-3 px-7 py-4 rounded-2xl bg-black hover:bg-ink transition-colors text-white shadow-strong">
+                    <Apple size={28} strokeWidth={1.6} aria-hidden="true" />
+                    <div className="text-left"><div className="text-xs opacity-75">İndir</div><div className="text-base font-bold leading-tight">App Store</div></div>
+                  </a>
+                )}
+                {PLAY_STORE_URL && (
+                  <a href={PLAY_STORE_URL} target="_blank" rel="noopener noreferrer"
+                     className="inline-flex items-center gap-3 px-7 py-4 rounded-2xl bg-black hover:bg-ink transition-colors text-white shadow-strong">
+                    <Smartphone size={28} strokeWidth={1.6} aria-hidden="true" />
+                    <div className="text-left"><div className="text-xs opacity-75">İndir</div><div className="text-base font-bold leading-tight">Google Play</div></div>
+                  </a>
+                )}
+              </div>
+            ) : (
+              // Beta — çalışan tek CTA: bekleme listesine kaydır
+              <div className="mt-10 flex justify-center">
+                <Link
+                  href="/#bekleme"
+                  className="inline-flex items-center gap-2 px-8 py-4 rounded-full bg-white text-accent-dark font-bold text-lg shadow-strong hover:scale-105 transition-transform"
+                >
+                  Beta&apos;ya kaydol
+                  <ArrowRight size={20} />
+                </Link>
+              </div>
+            )}
 
             <p className="mt-8 text-sm text-white/70">
-              <Download size={14} className="inline mr-1.5" />
-              Şu anda kapalı beta — yakında public lansman
+              {storeYayinda ? 'iOS 14+ · Android 8+' : 'Şu anda kapalı beta — yakında App Store & Google Play'}
             </p>
           </div>
         </motion.div>

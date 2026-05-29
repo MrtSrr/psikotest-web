@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from 'react';
 import { MessageCircle } from 'lucide-react';
+import { WHATSAPP_NUMBER, whatsappHref } from '@/lib/config';
 
 export function WhatsAppFloating() {
   const [goster, setGoster] = useState(false);
@@ -10,11 +11,13 @@ export function WhatsAppFloating() {
     return () => clearTimeout(t);
   }, []);
 
-  if (!goster) return null;
+  // Gerçek WhatsApp numarası tanımlı değilse butonu hiç gösterme
+  // (placeholder numaraya yönlendirip kullanıcıyı yanıltmaktansa gizle).
+  if (!goster || !WHATSAPP_NUMBER) return null;
 
   return (
     <a
-      href="https://wa.me/905555555555?text=Selam!%20Psiva%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum."
+      href={whatsappHref()}
       target="_blank"
       rel="noopener noreferrer"
       className="fixed bottom-24 md:bottom-6 right-4 md:right-6 z-30 w-14 h-14 rounded-full bg-[#25D366] hover:bg-[#1ebe57] text-white shadow-strong flex items-center justify-center transition-all hover:scale-110 active:scale-95 animate-fade-in-up"

@@ -1,10 +1,10 @@
 import type { Metadata } from 'next';
 import { ForTherapists } from '@/components/ForTherapists';
-import { DownloadCTA } from '@/components/DownloadCTA';
+import { BetaWaitlist } from '@/components/BetaWaitlist';
 
 export const metadata: Metadata = {
   title: 'Uzmanlar İçin',
-  description: 'Psiva&apos;te uzman olarak kayıt ol — sadece %10 komisyon, otomatik faturalama, KVKK uyumlu danışan akışı.',
+  description: 'Psiva\'da uzman olarak kayıt ol — sadece %10 komisyon, otomatik faturalama, KVKK uyumlu danışan akışı.',
 };
 
 export default function UzmanlarPage() {
@@ -12,7 +12,10 @@ export default function UzmanlarPage() {
     <>
       <div className="pt-24" />
       <ForTherapists />
-      <DownloadCTA />
+      {/* Terapist buraya "kayıt ol" diye gelir — gerçek bir aksiyon (beta formu) burada olmalı */}
+      <section id="bekleme">
+        <BetaWaitlist />
+      </section>
     </>
   );
 }

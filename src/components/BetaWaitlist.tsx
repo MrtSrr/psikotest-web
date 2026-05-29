@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Mail, ArrowRight, CheckCircle2 } from 'lucide-react';
+import { WAITLIST_ENDPOINT, EMAIL_DESTEK } from '@/lib/config';
 
 export function BetaWaitlist() {
   const [email, setEmail] = useState('');
@@ -16,8 +17,28 @@ export function BetaWaitlist() {
       return;
     }
     setDurum('gonderiliyor');
-    // TODO: POST /api/waitlist (backend endpoint hazır olunca aktif)
-    await new Promise(r => setTimeout(r, 800));
+
+    // 1) Formspree endpoint tanımlıysa gerçek POST yap
+    if (WAITLIST_ENDPOINT) {
+      try {
+        const res = await fetch(WAITLIST_ENDPOINT, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+          body: JSON.stringify({ email, kaynak: 'psiva-web-beta' }),
+        });
+        if (!res.ok) throw new Error('submit failed');
+        setDurum('tamam');
+      } catch {
+        setDurum('hata');
+      }
+      return;
+    }
+
+    // 2) Endpoint yoksa mailto fallback — kullanıcının mail uygulaması açılır,
+    //    e-posta hiçbir zaman sessizce kaybolmaz.
+    const konu = encodeURIComponent('Psiva Beta Kaydı');
+    const govde = encodeURIComponent(`Beta listesine eklenmek istiyorum.\nE-posta: ${email}`);
+    window.location.href = `mailto:${EMAIL_DESTEK}?subject=${konu}&body=${govde}`;
     setDurum('tamam');
   };
 
