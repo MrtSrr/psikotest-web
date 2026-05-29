@@ -8,25 +8,25 @@ import { WhatsAppFloating } from '@/components/WhatsAppFloating';
 import { JsonLd } from '@/components/JsonLd';
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://psikotest.app'),
+  metadataBase: new URL('https://psiva.app'),
   title: {
-    default: 'PsikoTest — Türkiye\'nin Psikolojik Test Uzman Platformu',
-    template: '%s · PsikoTest',
+    default: 'Psiva — Türkiye\'nin Psikolojik Test Uzman Platformu',
+    template: '%s · Psiva',
   },
   description: 'Lisanslı psikolog, psikiyatrist ve psikolojik danışmanlardan WISC, MMPI, Beck ve daha fazla test. 3 tıkla yüz yüze randevu. KVKK uyumlu, güvenli ödeme.',
   keywords: ['psikolojik test', 'wisc', 'mmpi', 'rorschach', 'beck depresyon', 'psikolog', 'psikiyatr', 'randevu', 'kvkk', 'türkiye'],
-  authors: [{ name: 'PsikoTest' }],
+  authors: [{ name: 'Psiva' }],
   openGraph: {
     type: 'website',
     locale: 'tr_TR',
-    url: 'https://psikotest.app',
-    title: 'PsikoTest — İhtiyacın olan testi, doğru uzmanla',
+    url: 'https://psiva.app',
+    title: 'Psiva — İhtiyacın olan testi, doğru uzmanla',
     description: 'Türkiye\'nin psikolojik test odaklı uzman platformu. Lisanslı uzmanlardan 3 tıkla randevu.',
-    siteName: 'PsikoTest',
+    siteName: 'Psiva',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'PsikoTest',
+    title: 'Psiva',
     description: 'Türkiye\'nin psikolojik test odaklı uzman platformu',
   },
   robots: { index: true, follow: true },

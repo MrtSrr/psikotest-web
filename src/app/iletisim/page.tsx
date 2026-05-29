@@ -3,26 +3,26 @@ import { Mail, Shield, FileText, LifeBuoy } from 'lucide-react';
 
 export const metadata: Metadata = {
   title: 'İletişim',
-  description: 'PsikoTest iletişim — destek, KVKK başvuru, hukuk, acil destek hatları.',
+  description: 'Psiva iletişim — destek, KVKK başvuru, hukuk, acil destek hatları.',
 };
 
 const kanallar = [
   {
     Ikon: Mail,
     baslik: 'Genel destek',
-    email: 'destek@psikotest.app',
+    email: 'destek@psiva.app',
     aciklama: 'Sorular, bug raporu, öneriler — 24-48 saat içinde yanıt.',
   },
   {
     Ikon: Shield,
     baslik: 'KVKK başvuru',
-    email: 'kvkk@psikotest.app',
+    email: 'kvkk@psiva.app',
     aciklama: 'Veri erişim, silme, düzeltme talepleri — yasal süre 30 gün.',
   },
   {
     Ikon: FileText,
     baslik: 'Hukuk',
-    email: 'hukuk@psikotest.app',
+    email: 'hukuk@psiva.app',
     aciklama: 'İçerik kaldırma talepleri, yasal bildirimler, sözleşme.',
   },
 ];

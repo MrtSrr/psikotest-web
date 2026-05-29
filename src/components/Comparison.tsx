@@ -90,13 +90,13 @@ export function Comparison() {
     <section className="py-20 lg:py-32 bg-bg-soft">
       <div className="container-max max-w-5xl">
         <div className="text-center max-w-2xl mx-auto mb-16">
-          <span className="badge-soft">Neden PsikoTest?</span>
+          <span className="badge-soft">Neden Psiva?</span>
           <h2 className="mt-6 text-3xl lg:text-5xl font-extrabold tracking-tight">
             Psikolojik test almanın <span className="gradient-text">4 yolu</span>
           </h2>
           <p className="mt-5 text-lg text-ink-soft">
             Şu ana kadar bir uzman bulmanın yolları belirsiz, yavaş ve riskliydi.
-            PsikoTest <strong>bu kategoriyi</strong> Türkiye için yeniden tasarladı.
+            Psiva <strong>bu kategoriyi</strong> Türkiye için yeniden tasarladı.
           </p>
         </div>
 
@@ -114,7 +114,7 @@ export function Comparison() {
                   Özellik
                 </th>
                 <th className="p-6 bg-gradient-to-b from-accent-muted/40 to-transparent">
-                  <div className="text-xs font-bold text-accent uppercase tracking-wider">PsikoTest</div>
+                  <div className="text-xs font-bold text-accent uppercase tracking-wider">Psiva</div>
                   <div className="text-base font-extrabold text-ink mt-1">App</div>
                 </th>
                 <th className="p-6">
@@ -167,7 +167,7 @@ export function Comparison() {
 
         <p className="text-center mt-8 text-sm text-ink-soft max-w-2xl mx-auto leading-relaxed">
           <strong>Hiwell, BetterHelp, Talkspace</strong> sürekli terapi platformlarıdır —
-          farklı bir ihtiyaca cevap verir. PsikoTest <strong>tek seferlik psikolojik test</strong>
+          farklı bir ihtiyaca cevap verir. Psiva <strong>tek seferlik psikolojik test</strong>
           için tasarlandı.
         </p>
       </div>

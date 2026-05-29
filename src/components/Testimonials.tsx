@@ -11,7 +11,7 @@ const yorumlar = [
     puan: 5,
   },
   {
-    yazi: 'Terapi platformlarında %25 komisyon veriyordum. PsikoTest %10 ve test odaklı — danışan profilim daha net. Yıllık kazancımda ~50.000 TL fark yarattı, üstelik faturalama ve müsaitlik yönetimi otomatik.',
+    yazi: 'Terapi platformlarında %25 komisyon veriyordum. Psiva %10 ve test odaklı — danışan profilim daha net. Yıllık kazancımda ~50.000 TL fark yarattı, üstelik faturalama ve müsaitlik yönetimi otomatik.',
     isim: 'Dr. Mehmet K.',
     rol: 'Klinik Psikolog, 12 yıl deneyim',
     puan: 5,

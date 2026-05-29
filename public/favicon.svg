@@ -5,7 +5,17 @@
       <stop offset="100%" stop-color="#3578C0"/>
     </linearGradient>
   </defs>
+  <!-- Arka plan -->
   <rect width="64" height="64" rx="14" fill="url(#g)"/>
-  <path d="M22 18a6 6 0 0 1 10-4.4A6 6 0 0 1 42 18a7 7 0 0 1 4.2 11A7 7 0 0 1 45 41.5a7 7 0 0 1-12.5 6.4 7 7 0 0 1-12.5-6.4A7 7 0 0 1 19 29 7 7 0 0 1 22 18z" fill="none" stroke="white" stroke-width="2.5" stroke-linejoin="round"/>
-  <line x1="32" y1="13" x2="32" y2="48" stroke="white" stroke-width="2.5" stroke-linecap="round" opacity="0.7"/>
+  <!-- ψ sembolü küçük versiyonu -->
+  <!-- Sol kol -->
+  <path d="M 18 36 Q 16 26 20 19 Q 23 14 27 12" fill="none" stroke="white" stroke-width="4.5" stroke-linecap="round"/>
+  <!-- Sağ kol -->
+  <path d="M 46 36 Q 48 26 44 19 Q 41 14 37 12" fill="none" stroke="white" stroke-width="4.5" stroke-linecap="round"/>
+  <!-- Orta çizgi -->
+  <line x1="32" y1="36" x2="32" y2="50" stroke="white" stroke-width="4.5" stroke-linecap="round"/>
+  <!-- Üst yay -->
+  <path d="M 20 19 Q 32 10 44 19" fill="none" stroke="white" stroke-width="4.5" stroke-linecap="round"/>
+  <!-- Küçük nokta -->
+  <circle cx="32" cy="54" r="2.5" fill="rgba(255,255,255,0.6)"/>
 </svg>

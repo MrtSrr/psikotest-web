@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 import { Star, MapPin, Heart, CalendarDays, LayoutDashboard, CircleUser, Search } from 'lucide-react';
 
 /**
- * Faux app screenshot — gerçek PsikoTest app UI'ını birebir simüle eder.
+ * Faux app screenshot — gerçek Psiva app UI'ını birebir simüle eder.
  * BottomTabBar: 3 tab (Randevular | Ana FAB | Profil) — orta gradient FAB,
  * aktif tab altında pill indicator (gerçek app pattern'i).
  */

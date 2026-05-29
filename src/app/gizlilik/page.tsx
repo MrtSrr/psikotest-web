@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: 'Gizlilik Politikası',
-  description: 'PsikoTest gizlilik politikası — KVKK m.11 hakları, veri saklama, üçüncü taraflar.',
+  description: 'Psiva gizlilik politikası — KVKK m.11 hakları, veri saklama, üçüncü taraflar.',
 };
 
 export default function GizlilikPage() {
@@ -20,11 +20,11 @@ export default function GizlilikPage() {
           <section>
             <h2 className="text-2xl font-bold text-ink mb-3">1. Veri Sorumlusu</h2>
             <p>
-              <strong>PsikoTest</strong>, psikolojik test ve uzman danışmanlık hizmetleri için
+              <strong>Psiva</strong>, psikolojik test ve uzman danışmanlık hizmetleri için
               aracı bir teknoloji platformudur. KVKK kapsamında veri sorumlusu sıfatıyla
               hareket eder.
             </p>
-            <p className="mt-2">İletişim: <a href="mailto:kvkk@psikotest.app" className="text-accent font-semibold">kvkk@psikotest.app</a></p>
+            <p className="mt-2">İletişim: <a href="mailto:kvkk@psiva.app" className="text-accent font-semibold">kvkk@psiva.app</a></p>
           </section>
 
           <section>
@@ -83,7 +83,7 @@ export default function GizlilikPage() {
               </tbody>
             </table>
             <p className="mt-4">
-              E-posta başvuru: <a href="mailto:kvkk@psikotest.app" className="text-accent font-semibold">kvkk@psikotest.app</a>{' '}
+              E-posta başvuru: <a href="mailto:kvkk@psiva.app" className="text-accent font-semibold">kvkk@psiva.app</a>{' '}
               (yasal süre: 30 gün)
             </p>
           </section>
@@ -91,7 +91,7 @@ export default function GizlilikPage() {
           <section>
             <h2 className="text-2xl font-bold text-ink mb-3">4. Çocuklar</h2>
             <p>
-              PsikoTest <strong>18 yaş altı kullanıcılara hizmet vermez</strong>. Çocuk testleri için
+              Psiva <strong>18 yaş altı kullanıcılara hizmet vermez</strong>. Çocuk testleri için
               yasal veli onayıyla, uzman vekaleten girer.
             </p>
           </section>
@@ -99,7 +99,7 @@ export default function GizlilikPage() {
           <section>
             <h2 className="text-2xl font-bold text-ink mb-3">5. Mental Sağlık Uyarısı</h2>
             <p>
-              <strong>PsikoTest tıbbi acil durum platformu değildir.</strong>
+              <strong>Psiva tıbbi acil durum platformu değildir.</strong>
             </p>
             <ul className="list-disc pl-6 space-y-1 mt-2">
               <li>Kriz / intihar düşüncesi: <a href="tel:182" className="text-accent font-semibold">182</a></li>
@@ -119,7 +119,7 @@ export default function GizlilikPage() {
           </section>
 
           <p className="text-sm text-ink-muted pt-6 border-t border-ink/10">
-            Sorularınız için: <a href="mailto:kvkk@psikotest.app" className="text-accent font-semibold">kvkk@psikotest.app</a>
+            Sorularınız için: <a href="mailto:kvkk@psiva.app" className="text-accent font-semibold">kvkk@psiva.app</a>
           </p>
         </div>
       </div>

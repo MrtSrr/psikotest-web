@@ -4,7 +4,7 @@ import { DownloadCTA } from '@/components/DownloadCTA';
 
 export const metadata: Metadata = {
   title: 'Uzmanlar İçin',
-  description: 'PsikoTest&apos;te uzman olarak kayıt ol — sadece %10 komisyon, otomatik faturalama, KVKK uyumlu danışan akışı.',
+  description: 'Psiva&apos;te uzman olarak kayıt ol — sadece %10 komisyon, otomatik faturalama, KVKK uyumlu danışan akışı.',
 };
 
 export default function UzmanlarPage() {

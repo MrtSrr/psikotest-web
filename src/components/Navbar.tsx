@@ -32,7 +32,7 @@ export function Navbar() {
           <div className="w-9 h-9 rounded-xl bg-gradient-to-br from-accent to-accent-dark flex items-center justify-center shadow-medium group-hover:scale-110 transition-transform">
             <Brain className="text-white" size={20} strokeWidth={2.4} />
           </div>
-          <span className="font-bold text-lg tracking-tight">PsikoTest</span>
+          <span className="font-bold text-lg tracking-tight">Psiva</span>
         </Link>
 
         {/* Desktop */}

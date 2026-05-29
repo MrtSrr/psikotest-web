@@ -6,7 +6,7 @@ import { Plus, Minus } from 'lucide-react';
 
 const sorular = [
   {
-    soru: 'PsikoTest tıbbi acil durum platformu mu?',
+    soru: 'Psiva tıbbi acil durum platformu mu?',
     cevap: 'Hayır. Kriz veya tıbbi acil durumda 182 (Sağlık Bakanlığı Psikolojik Destek), 112 (Acil) veya 155 (Polis) aranmalıdır. Uygulamada Acil Destek menüsünden tek tıkla bu hatlara erişebilirsiniz.',
   },
   {
@@ -31,7 +31,7 @@ const sorular = [
   },
   {
     soru: '18 yaş altı kullanabilir mi?',
-    cevap: 'Hayır. PsikoTest 18 yaş ve üstü kullanıcılara hizmet verir. Çocuk testleri (WISC, CBCL vb.) için veli/vasi yasal hesap açarak uzmana vekaleten randevu alır.',
+    cevap: 'Hayır. Psiva 18 yaş ve üstü kullanıcılara hizmet verir. Çocuk testleri (WISC, CBCL vb.) için veli/vasi yasal hesap açarak uzmana vekaleten randevu alır.',
   },
   {
     soru: 'Uzmanlardan ne kadar komisyon alıyorsunuz?',

@@ -5,7 +5,7 @@ export default function robots(): MetadataRoute.Robots {
     rules: [
       { userAgent: '*', allow: '/', disallow: ['/api/', '/_next/'] },
     ],
-    sitemap: 'https://psikotest.app/sitemap.xml',
-    host: 'https://psikotest.app',
+    sitemap: 'https://psiva.app/sitemap.xml',
+    host: 'https://psiva.app',
   };
 }

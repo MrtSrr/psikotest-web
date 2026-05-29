@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6AAEE0"/>
+      <stop offset="55%" stop-color="#4A90D9"/>
+      <stop offset="100%" stop-color="#3578C0"/>
+    </linearGradient>
+    <linearGradient id="sym" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="rgba(255,255,255,1)"/>
+      <stop offset="100%" stop-color="rgba(255,255,255,0.85)"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <!-- Arka plan — yumuşak köşeli kare (iOS adaptive icon) -->
+  <rect width="1024" height="1024" rx="230" fill="url(#bg)"/>
+
+  <!-- Dekoratif soft blob — sol üst -->
+  <circle cx="180" cy="200" r="200" fill="rgba(255,255,255,0.06)"/>
+  <!-- Dekoratif soft blob — sağ alt -->
+  <circle cx="880" cy="820" r="250" fill="rgba(255,255,255,0.05)"/>
+
+  <!--
+    PSI (ψ) sembolü — psikoloji evrensel sembolü, Psiva'nın kalbinde.
+    Elle çizilmiş, geometrik ama organik. Üç dikey kol + yay.
+    Merkez: 512, 512. Toplam yükseklik ~520px.
+  -->
+
+  <!-- Sol kol (ψ) -->
+  <path d="M 320 560 Q 300 440 340 340 Q 380 240 440 210"
+        fill="none" stroke="url(#sym)" stroke-width="72"
+        stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Sağ kol (ψ) -->
+  <path d="M 704 560 Q 724 440 684 340 Q 644 240 584 210"
+        fill="none" stroke="url(#sym)" stroke-width="72"
+        stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Yatay bağlantı çizgisi (ψ orta) -->
+  <line x1="512" y1="560" x2="512" y2="760"
+        stroke="url(#sym)" stroke-width="72"
+        stroke-linecap="round"/>
+
+  <!-- Üst yay (ψ karakteristik kıvrımı) -->
+  <path d="M 340 340 Q 512 180 684 340"
+        fill="none" stroke="url(#sym)" stroke-width="72"
+        stroke-linecap="round"/>
+
+  <!-- Alt küçük nokta — marka detayı, aksanı vurgular -->
+  <circle cx="512" cy="800" r="36" fill="rgba(255,255,255,0.5)"/>
+</svg>

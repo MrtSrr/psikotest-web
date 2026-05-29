@@ -1,7 +1,7 @@
 import type { MetadataRoute } from 'next';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const base = 'https://psikotest.app';
+  const base = 'https://psiva.app';
   const tarih = new Date();
 
   return [

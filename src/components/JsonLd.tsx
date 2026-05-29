@@ -6,14 +6,14 @@ export function JsonLd() {
   const data = {
     '@context': 'https://schema.org',
     '@type': 'Organization',
-    name: 'PsikoTest',
-    url: 'https://psikotest.app',
-    logo: 'https://psikotest.app/icon.png',
+    name: 'Psiva',
+    url: 'https://psiva.app',
+    logo: 'https://psiva.app/icon.png',
     description: 'Türkiye\'nin psikolojik test odaklı uzman platformu',
     sameAs: [] as string[],
     contactPoint: [
-      { '@type': 'ContactPoint', email: 'destek@psikotest.app', contactType: 'customer support', availableLanguage: ['Turkish'] },
-      { '@type': 'ContactPoint', email: 'kvkk@psikotest.app', contactType: 'KVKK / GDPR', availableLanguage: ['Turkish'] },
+      { '@type': 'ContactPoint', email: 'destek@psiva.app', contactType: 'customer support', availableLanguage: ['Turkish'] },
+      { '@type': 'ContactPoint', email: 'kvkk@psiva.app', contactType: 'KVKK / GDPR', availableLanguage: ['Turkish'] },
     ],
     address: { '@type': 'PostalAddress', addressCountry: 'TR' },
   };
@@ -21,7 +21,7 @@ export function JsonLd() {
   const webApp = {
     '@context': 'https://schema.org',
     '@type': 'WebApplication',
-    name: 'PsikoTest',
+    name: 'Psiva',
     applicationCategory: 'HealthApplication',
     operatingSystem: 'iOS, Android',
     offers: { '@type': 'Offer', price: '0', priceCurrency: 'TRY' },

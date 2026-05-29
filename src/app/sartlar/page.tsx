@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: 'Kullanım Şartları',
-  description: 'PsikoTest kullanım şartları — mesafeli sözleşme cayma hakkı, iptal politikası, sorumluluk.',
+  description: 'Psiva kullanım şartları — mesafeli sözleşme cayma hakkı, iptal politikası, sorumluluk.',
 };
 
 export default function SartlarPage() {
@@ -16,14 +16,14 @@ export default function SartlarPage() {
 
         <div className="mt-10 space-y-8 text-ink-soft leading-relaxed">
           <section>
-            <h2 className="text-2xl font-bold text-ink mb-3">1. PsikoTest Nedir?</h2>
+            <h2 className="text-2xl font-bold text-ink mb-3">1. Psiva Nedir?</h2>
             <p>
-              PsikoTest, danışanlar ile lisanslı psikolog/psikiyatrist/psikolojik danışman
+              Psiva, danışanlar ile lisanslı psikolog/psikiyatrist/psikolojik danışman
               ("Uzman") arasında <strong>psikolojik test ve yüz yüze seans</strong> randevusunu
               sağlayan bir <strong>aracı teknoloji platformudur</strong>.
             </p>
             <p className="mt-2">
-              <strong>PsikoTest tıbbi hizmet sağlayıcısı değildir.</strong> Tıbbi tanı, tedavi
+              <strong>Psiva tıbbi hizmet sağlayıcısı değildir.</strong> Tıbbi tanı, tedavi
               veya yorum uzmanın bireysel sorumluluğundadır.
             </p>
           </section>
@@ -84,7 +84,7 @@ export default function SartlarPage() {
 
           <section>
             <h2 className="text-2xl font-bold text-ink mb-3">7. Sorumluluk Sınırlaması</h2>
-            <p>PsikoTest aracı platform olarak:</p>
+            <p>Psiva aracı platform olarak:</p>
             <ul className="list-disc pl-6 space-y-1 mt-2">
               <li>✓ Teknik altyapı sürekliliği (%99.5 SLA hedef)</li>
               <li>✓ Ödeme güvenliği (iyzico altyapısı)</li>
@@ -106,8 +106,8 @@ export default function SartlarPage() {
           </section>
 
           <p className="text-sm text-ink-muted pt-6 border-t border-ink/10">
-            İletişim: <a href="mailto:destek@psikotest.app" className="text-accent font-semibold">destek@psikotest.app</a> ·
-            Hukuk: <a href="mailto:hukuk@psikotest.app" className="text-accent font-semibold">hukuk@psikotest.app</a>
+            İletişim: <a href="mailto:destek@psiva.app" className="text-accent font-semibold">destek@psiva.app</a> ·
+            Hukuk: <a href="mailto:hukuk@psiva.app" className="text-accent font-semibold">hukuk@psiva.app</a>
           </p>
         </div>
       </div>

@@ -1,7 +1,7 @@
 import { ImageResponse } from 'next/og';
 
 export const runtime = 'edge';
-export const alt = 'PsikoTest — Türkiye\'nin psikolojik test platformu';
+export const alt = 'Psiva — Türkiye\'nin psikolojik test platformu';
 export const size = { width: 1200, height: 630 };
 export const contentType = 'image/png';
 
@@ -40,7 +40,7 @@ export default async function OG() {
         </div>
 
         <div style={{ fontSize: 84, fontWeight: 900, letterSpacing: -2, textAlign: 'center', lineHeight: 1.05, marginBottom: 24 }}>
-          PsikoTest
+          Psiva
         </div>
 
         <div style={{ fontSize: 36, fontWeight: 600, textAlign: 'center', maxWidth: 900, lineHeight: 1.3, opacity: 0.95 }}>

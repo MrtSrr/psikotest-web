@@ -32,7 +32,7 @@ export function ForTherapists() {
             </h2>
             <p className="mt-6 text-lg lg:text-xl text-white/85 leading-relaxed">
               Hiwell ve BetterHelp gibi terapi platformları %20-30 komisyon alıyor.
-              PsikoTest&apos;te <strong className="text-white">sadece %10</strong> — kazancının
+              Psiva&apos;te <strong className="text-white">sadece %10</strong> — kazancının
               <strong className="text-white"> %90&apos;ı sende kalır</strong>.
               Üstelik test odaklı bir platformda olduğun için yanlış müşteri akmaz.
             </p>

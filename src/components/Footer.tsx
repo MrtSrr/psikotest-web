@@ -14,7 +14,7 @@ export function Footer() {
               <div className="w-10 h-10 rounded-xl bg-accent flex items-center justify-center">
                 <Brain className="text-white" size={22} strokeWidth={2.4} />
               </div>
-              <span className="font-bold text-xl">PsikoTest</span>
+              <span className="font-bold text-xl">Psiva</span>
             </div>
             <p className="mt-5 text-white/70 leading-relaxed max-w-md">
               Türkiye&apos;nin psikolojik test odaklı uzman platformu.
@@ -57,13 +57,13 @@ export function Footer() {
                 </Link>
               </li>
               <li>
-                <a href="mailto:kvkk@psikotest.app" className="hover:text-white inline-flex items-center gap-1.5">
+                <a href="mailto:kvkk@psiva.app" className="hover:text-white inline-flex items-center gap-1.5">
                   <Mail size={14} /> KVKK başvuru
                 </a>
               </li>
               <li>
-                <a href="mailto:destek@psikotest.app" className="hover:text-white">
-                  destek@psikotest.app
+                <a href="mailto:destek@psiva.app" className="hover:text-white">
+                  destek@psiva.app
                 </a>
               </li>
             </ul>
@@ -71,7 +71,7 @@ export function Footer() {
         </div>
 
         <div className="pt-8 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-white/60">
-          <p>&copy; {yil} PsikoTest. Tüm hakları saklıdır.</p>
+          <p>&copy; {yil} Psiva. Tüm hakları saklıdır.</p>
           <p>
             Made with care in{' '}
             <span className="text-white font-medium">Türkiye 🇹🇷</span>
