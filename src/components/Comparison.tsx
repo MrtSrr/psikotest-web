@@ -6,56 +6,56 @@ import { Check, X, AlertCircle } from 'lucide-react';
 const yontemler = [
   {
     etiket: 'Sertifika doğrulanmış',
-    psikotest: true,
+    psiva: true,
     google: false,
     tanidik: 'kısmen',
     klinik: 'kısmen',
   },
   {
     etiket: 'Fiyat baştan belli',
-    psikotest: true,
+    psiva: true,
     google: false,
     tanidik: false,
     klinik: false,
   },
   {
     etiket: 'Müsait gün/saat direkt görünür',
-    psikotest: true,
+    psiva: true,
     google: false,
     tanidik: false,
     klinik: false,
   },
   {
     etiket: 'KVKK uyumlu kayıt',
-    psikotest: true,
+    psiva: true,
     google: false,
     tanidik: false,
     klinik: 'kısmen',
   },
   {
     etiket: 'Güvenli online ödeme',
-    psikotest: true,
+    psiva: true,
     google: false,
     tanidik: false,
     klinik: 'kısmen',
   },
   {
     etiket: 'Doğru testi seçmeye yardım',
-    psikotest: true,
+    psiva: true,
     google: false,
     tanidik: 'kısmen',
     klinik: 'kısmen',
   },
   {
     etiket: 'Yorumlar ve puanlama',
-    psikotest: true,
+    psiva: true,
     google: 'kısmen',
     tanidik: false,
     klinik: false,
   },
   {
     etiket: 'Şikayet/iade güvencesi',
-    psikotest: true,
+    psiva: true,
     google: false,
     tanidik: false,
     klinik: false,
@@ -136,7 +136,7 @@ export function Comparison() {
                 <tr key={y.etiket} className={`border-b border-ink/5 ${i % 2 === 0 ? 'bg-bg-soft/30' : ''}`}>
                   <td className="p-5 font-semibold text-ink">{y.etiket}</td>
                   <td className="p-5 text-center bg-accent-muted/10">
-                    <Cell value={y.psikotest} vurgu />
+                    <Cell value={y.psiva} vurgu />
                   </td>
                   <td className="p-5 text-center">
                     <Cell value={y.google} />

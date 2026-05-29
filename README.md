@@ -1,13 +1,13 @@
-# PsikoTest — Marketing Web Sitesi
+# Psiva — Marketing Web Sitesi
 
-Premium landing page for PsikoTest mobile app — Türkiye'nin psikolojik test marketplace'i.
+Premium landing page for Psiva mobile app — Türkiye'nin psikolojik test marketplace'i.
 
 **Stack:** Next.js 15 (App Router) + Tailwind v3 + Framer Motion + Lucide React + TypeScript 5.7
 
 ## 🚀 Hızlı Başlangıç
 
 ```bash
-cd /Users/mert/Desktop/psikotest-web
+cd /Users/mert/Desktop/psiva-web
 npm install
 npm run dev
 # → http://localhost:3001 (port 3000 backend'de ise)
@@ -103,14 +103,14 @@ Conversion funnel sırası:
 npm i -g vercel
 
 # Deploy
-cd /Users/mert/Desktop/psikotest-web
+cd /Users/mert/Desktop/psiva-web
 vercel              # preview
 vercel --prod       # production
 ```
 
 **Domain bağla:**
 1. Vercel dashboard → Project Settings → Domains
-2. `psikotest.app` ekle
+2. `psiva.app` ekle
 3. DNS A/AAAA kayıtlarını Vercel'e yönlendir
 
 **Alternatif:** Netlify (`netlify deploy --prod`) veya Cloudflare Pages (git push otomatik).
@@ -148,22 +148,22 @@ vercel --prod       # production
 ## ⚖️ Yasal
 
 **App Store/Play Store başvurusu için zorunlu:**
-1. App Store Connect "Privacy Policy URL" → `https://psikotest.app/gizlilik`
+1. App Store Connect "Privacy Policy URL" → `https://psiva.app/gizlilik`
 2. Google Play Console "Privacy Policy" → aynı URL
-3. App içinde `Linking.openURL('https://psikotest.app/gizlilik')` ✅ hazır
+3. App içinde `Linking.openURL('https://psiva.app/gizlilik')` ✅ hazır
 
 **6502 Tüketici Kanunu:** ToS'ta cayma hakkı m.15/g istisnası ✅
 **KVKK m.11:** Gizlilik politikasında veri erişim/silme hakkı detayı ✅
 
 ## 🔗 İletişim
 
-- `destek@psikotest.app`
-- `kvkk@psikotest.app`
-- `hukuk@psikotest.app`
+- `destek@psiva.app`
+- `kvkk@psiva.app`
+- `hukuk@psiva.app`
 
 ## 🎯 Stratejik Pozisyonlama
 
-PsikoTest **terapi platformu değildir** (Hiwell/BetterHelp/Talkspace değil).
+Psiva **terapi platformu değildir** (Hiwell/BetterHelp/Talkspace değil).
 **Psikolojik test marketplace**'idir — tek seferlik değerlendirme için doğru uzmanla 3 tıkla buluşma.
 
 Comparison tablosunda alternatif yöntemlerle (Google arama, tanıdıktan tavsiye, klinik direkt arama) kıyaslanır — kendisini **yeni bir kategori** olarak konumlandırır.

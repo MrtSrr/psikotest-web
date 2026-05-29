@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react';
 import Link from 'next/link';
 import { Cookie } from 'lucide-react';
 
-const KEY = 'psikotest_cookie_consent_v1';
+const KEY = 'psiva_cookie_consent_v1';
 
 export function CookieConsent() {
   const [goster, setGoster] = useState(false);

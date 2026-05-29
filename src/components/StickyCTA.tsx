@@ -12,7 +12,7 @@ export function StickyCTA() {
   useEffect(() => {
     // Cookie consent kapalıysa sticky CTA göster — çakışmayı önle
     try {
-      const cookieDurum = localStorage.getItem('psikotest_cookie_consent_v1');
+      const cookieDurum = localStorage.getItem('psiva_cookie_consent_v1');
       if (cookieDurum) setCookieAcik(false);
     } catch {}
 
@@ -22,7 +22,7 @@ export function StickyCTA() {
     // Cookie consent dismiss'ini izle (storage event başka tab için, custom event aynı tab için)
     const onStorage = () => {
       try {
-        const v = localStorage.getItem('psikotest_cookie_consent_v1');
+        const v = localStorage.getItem('psiva_cookie_consent_v1');
         if (v) setCookieAcik(false);
       } catch {}
     };
